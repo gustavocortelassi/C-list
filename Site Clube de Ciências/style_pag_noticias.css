@@ -7,12 +7,11 @@
 }
 
 body {
-    background-image: url(img/Frame\ 3.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-
+    background-image: url(/img/fundo1.jpg);
+    background-repeat: repeat;
 }
+
+
 
 .menu {
     padding-top: 15px;
@@ -26,13 +25,6 @@ body {
     box-shadow: 1px 3px 10px rgb(0, 0, 0);
     position: fixed;
     z-index: 1;
-
-}
-
-.test:hover {
-    opacity: 0.7;
-    color: #ff6600;
-
 }
 
 .menu--nav {
@@ -66,26 +58,25 @@ header .navbar ul {
 
 }
 
-
 .conteiner {
     padding: 15px;
-    margin-top: 10px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 32vh 32vh;
     grid-template-rows: 32vh;
-    gap: 70px;
+    gap: 30px;
     justify-content: center;
 }
 
 .conteiner div {
     background-color: #de8508;
     box-shadow: 1px 3px 10px rgb(0, 0, 0);
-    border-radius: 15px;
+    /* border-radius: 15px; */
     color: white;
     text-align: center;
     font-family: 'fontee';
     font-size: 25px;
-    padding-top: 15px;
+    padding-top: 12px;
 }
 
 .conteiner2 {
@@ -120,7 +111,6 @@ header .navbar ul {
     background-size: auto;
     background-position: center;
     text-align: left;
-
 }
 
 .m2 {
@@ -159,4 +149,96 @@ header .navbar ul {
     position: absolute;
     top: 15%;
     left: 50%;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.square {
+    width: 170px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 0 30px 30px 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    padding-top: 20px;
+}
+
+.square:hover {
+    background-color: darkorange;
+}
+
+.carousel-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    max-height: 500px; /* Defina a altura máxima do carousel de acordo com suas necessidades */
+    overflow: hidden;
+}
+
+.carousel-inner img {
+    object-fit: cover; /* Faz com que a imagem ocupe todo o espaço disponível do container mantendo a proporção */
+  width: 100%;
+  height: 100%;
+}
+
+.noticias {
+    position: relative;
+}
+
+.background-square {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(230, 128, 18);
+    z-index: -1;
+    border-radius: 30px;
+}
+
+.conteiner6 {
+    padding: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 32vh 32vh;
+    grid-template-rows: 32vh;
+    gap: 30px;
+    justify-content: center;
+}
+
+.square {
+    background-color: orange;
+    box-shadow: 1px 3px 10px rgb(0, 0, 0);
+    color: white;
+    text-align: left;
+    font-family: 'fontee';
+    font-size: 21px;
+    padding-top: 1px;
+
+}
+
+.footer-div {
+    margin-top: 50%;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    height: 85px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
 }
