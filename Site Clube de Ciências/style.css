@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Fonte';
+    src: url(/fonts/Geologica/Geologica-VariableFont_CRSV\,SHRP\,slnt\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fonte', sans-serif;
+    font-size: medium;
+    background-color: rgb(255, 146, 44);
+}
+
+h1 {
+    color: #0c42c0;
+}
+
+h2 {
+    color: #444242;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-center;
+    background-color: #0c42c0;
+    padding: 1px;
+    box-shadow: 1px 3px 10px black;
+}
+
+.navbar-list {
+    list-style-type: none;
+    margin: 3;
+    padding: 0;
+}
+
+.navbar-item {
+    display: inline-block;
+    margin-right: 15px;
+    margin-top: 13px;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.navbar-logo {
+    width: 180px;
+    height: auto;
+    margin-right: 480px;
+    margin-left: 480px;
+}
+
+#maior {
+    grid-area: maior;
+    background-color: #ffffff;
+    border: solid #ffffff;
+    box-shadow: 1px 3px 10px rgb(0, 0, 0);
+    border-radius: 12px;
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+    text-align: start;
+}
+
+#menor {
+    grid-area: menor;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+#menor div {
+    background-color: #ffffff;
+    border: solid #ffffff;
+    box-shadow: 1px 3px 10px rgb(0, 0, 0);
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+    padding: 20px;
+}
+
+.conteiner {
+    padding: 15px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 30vh 30vh 30vh;
+    grid-template-rows: 30vh;
+    gap: 50px;
+    justify-content: center;
+    grid-template-areas:
+        "maior maior maior"
+        "menor menor menor";
+}
+
+.conteiner div {
+    border-radius: 10px;
+    text-align: center;
+    font-size: small;
+}
