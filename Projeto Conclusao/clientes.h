@@ -126,3 +126,24 @@ void excluiCliente() {
         printf("Índice inválido.\n");
     }
 }
+
+void loginCliente() {
+    int i, numClientes;
+
+    printf("Clientes cadastrados:\n");
+    for (i = 0; i < 10; i++) {
+        printf("%d. %s %s\n", i + 1, cliente[i].nome, cliente[i].sobrenome);
+    }
+
+    printf("\nSelecione o cliente (1-10) para realizar as operações: ");
+    scanf("%d", &i);
+    getchar();
+
+    if (i >= 1 && i <= 10) {
+        struct Pessoa clienteSelecionado = cliente[i - 1];
+    } else {
+        printf("Índice inválido.\n");
+    }
+
+}
+
