@@ -7,7 +7,9 @@ struct Assentos {
     int numero;
     char classe;
     int status;
-} assento[50];
+};
+
+struct Assentos assento[50];
 
 void assentosLivres() {
     printf("Assentos Livres:\n");
@@ -15,16 +17,15 @@ void assentosLivres() {
 
     for (int i = 0; i < 50; i++) {
         if (assento[i].status == 0) {
-            printf("[ ]");  
+            printf("[ ]");
         } else {
-            printf("[X]");  
+            printf("[X]");
         }
 
         if ((i + 1) % 2 == 0) {
-            printf("  ");  // Espaço para separar as fileiras
+            printf("  ");
         }
 
-        // Quebra de linha após a impressão de uma fileira completa
         if ((i + 1) % 4 == 0) {
             printf("\n");
         }
@@ -36,18 +37,18 @@ void escolherAssento() {
     int numeroAssento;
 
     do {
-        printf("Digite o número do assento desejado: ");
+        printf("Digite o numero do assento desejado: ");
         scanf("%d", &numeroAssento);
 
-        // Verificar se o número do assento é válido
+        // Verificar se o numero do assento e valido
         if (numeroAssento < 1 || numeroAssento > 50) {
-            printf("Número de assento inválido.\n");
+            printf("Numero de assento invalido.\n");
             continue;
         }
 
-        // Verificar se o assento já está ocupado
+        // Verificar se o assento ja esta ocupado
         if (assento[numeroAssento - 1].status == 1) {
-            printf("O assento %d já está ocupado.\n", numeroAssento);
+            printf("O assento %d ja esta ocupado.\n", numeroAssento);
             continue;
         }
 
@@ -60,6 +61,26 @@ void escolherAssento() {
         printf("Deseja escolher outro assento? (S/N): ");
         scanf(" %c", &resposta);
     } while (resposta == 'S' || resposta == 's');
+
+    // Adicionar a secao de preco do assento
+    int precoAssento;
+
+    printf("Digite o preco do assento: ");
+    scanf("%d", &precoAssento);
+
+    // Armazenar o preco do assento na estrutura
+    assento[numeroAssento - 1].valor = precoAssento;
+
+    FILE *arquivo;
+    arquivo = fopen("compra.txt", "a");
+
+    if (arquivo == NULL) {
+        printf("Erro ao abrir o arquivo.\n");
+        return;
+    }
+
+    fprintf(arquivo, "Assento Comprado: %d\n", numeroAssento);
+    fprintf(arquivo, "Preco do Assento: %d\n", precoAssento);
+
+    fclose(arquivo);
 }
-
-

@@ -1,0 +1,12 @@
+Cliente: 
+Nome: 23 12
+---------------------------------------------
+Assento Comprado: 34
+Preco do Assento: 34
+---------------------------------------------
+Detalhes da passagem:
+Origem: Sao Paulo
+Destino: Foz
+Modelo: aviao 05
+Horario: 08:00
+---------------------------------------------
