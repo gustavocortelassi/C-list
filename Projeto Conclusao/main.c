@@ -6,12 +6,12 @@
 // 3 - Para prosseguir para a "visão do cliente", é essencial que faça
 //     o "login cliente", na operação 10.
 // 4 - Após ser feito o login, pode prosseguir para a opção 7, para 
-//     visualizar os voos disponiveis, ou opção 6, para comprar a passagem.
+//     visualizar os voos disponiveis, ou opção 6, para comprar o/os assento/s.
 // 5 - A escolha do assento deve ser feita antes de comprar a passagem.
 // 6 - Após comprar o assento, prosseguir para o case 8, e realizar as operações
 // 7 - Para escolher o destino/origem, ele vai solicitar o numero, coloque o numero do aviao
 //     Ex: FOZ: aviao 05 - digitar 5
-// 8 - Depois de comprar, o arquivo .txt estará devidamente preenchido com as 
+// 8 - Depois de comprar, o arquivo compra.txt estará devidamente preenchido com as 
 //     informações
 
 #include <stdio.h>
@@ -40,7 +40,7 @@ while (rodando == 1) {
     printf("4 - Excluir cliente\n");
     printf("10 - Login cliente\n");
     printf("---------------------\n");
-    printf("6 - Sistema de venda de passagens\n");
+    printf("6 - Sistema de venda de assentos\n");
     printf("7 - Mostrar opcoes de Embarque/Desembarque\n");
     printf("8 - Comprar passagem\n");
     printf("---------------------\n");

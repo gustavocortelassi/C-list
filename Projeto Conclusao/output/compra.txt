@@ -1,12 +1,14 @@
 Cliente: 
-Nome: 23 12
+Nome:  kelvin
 ---------------------------------------------
-Assento Comprado: 34
-Preco do Assento: 34
+Assento Comprado: 56
+Preco do Assento: 15
+Assento Comprado: 10
+Preco do Assento: 50
 ---------------------------------------------
 Detalhes da passagem:
 Origem: Sao Paulo
-Destino: Foz
-Modelo: aviao 05
+Destino: Rio de Janeiro
+Modelo: aviao 02
 Horario: 08:00
 ---------------------------------------------
