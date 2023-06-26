@@ -1,10 +1,8 @@
 Cliente: 
-Nome:  kelvin
+Nome:  Gustavo Domingos
 ---------------------------------------------
-Assento Comprado: 56
-Preco do Assento: 15
-Assento Comprado: 10
-Preco do Assento: 50
+Assento Comprado: 34
+Preco do Assento: 1200
 ---------------------------------------------
 Detalhes da passagem:
 Origem: Sao Paulo

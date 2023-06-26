@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Definição da estrutura de dados para os assentos
 struct Assentos {
     int valor;
     int numero;
@@ -9,8 +10,10 @@ struct Assentos {
     int status;
 };
 
+// Declaração do array de assentos
 struct Assentos assento[50];
 
+// Declaração do array de assentos
 void assentosLivres() {
     printf("Assentos Livres:\n");
     printf("Frente do aviao:\n");

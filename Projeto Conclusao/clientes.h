@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+// Definição da estrutura de dados para uma pessoa (cliente)
 struct Pessoa {
     char nome[50];
     char sobrenome[50];
